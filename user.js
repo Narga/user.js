@@ -333,3 +333,29 @@ user_pref("devtools.command-button-eyedropper.enabled", true);
 // Dark theme for dev tools:
 user_pref("devtools.theme", "dark");
 
+/*
+ * Extensions / Plugins
+ */
+
+// Allow install unsigned addons
+user_pref("xpinstall.signatures.required", false);
+
+// Disable metadata check phone-home: https://wiki.mozilla.org/Extension_Manager:Update_Checking
+user_pref("extensions.getAddons.cache.enabled", false);
+
+// Opt-out of add-on metadata updates
+// https://blog.mozilla.org/addons/how-to-opt-out-of-add-on-metadata-updates/
+user_pref("extensions.getAddons.cache.enabled",   false);
+
+// Updates addons automatically
+// https://blog.mozilla.org/addons/how-to-turn-off-add-on-updates/
+user_pref("extensions.update.enabled",		true);
+
+// http://kb.mozillazine.org/Extensions.blocklist.enabled
+user_pref("extensions.blocklist.enabled",		true);
+
+// Flash plugin state - never activate
+user_pref("plugin.state.flash",		0);
+// If installed - ask to activate Flash. If not - don't nag about missing Flash plugin:
+user_pref("plugins.notifyMissingFlash", false);
+

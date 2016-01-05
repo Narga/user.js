@@ -91,3 +91,10 @@ Here are some of the *highlights* from each category. For a full list of setting
 - Enable eyedropper
 - Use dark theme
 
+### Plugins & Extensions
+- Allow install unsigned addons
+- Disable plugins & addons phone-home
+- Opt-out of add-on metadata updates
+- Update addons automatically
+- Enable blocked addons
+- Disable flash and get rid of missing flash plugin
