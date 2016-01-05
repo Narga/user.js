@@ -59,3 +59,7 @@ Here are some of the *highlights* from each category. For a full list of setting
 - Stop predictive connections to sites when the user hovers their mouse over thumbnails on the New Tab Page
 - Disable Auto-update checking
 
+### Firefox Performance
+- Relocate cache to RAM
+- Enabled HTTP Cache to get rid of most UI lags and other browser slowness issues
+

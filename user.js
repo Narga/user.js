@@ -109,6 +109,14 @@ user_pref("social.shareDirectory", "");
 user_pref("social.toast-notifications.enabled", false);
 user_pref("social.whitelist", "");
 
+// Disable "Snippets" (Mozilla content shown on about:home screen)
+// https://support.mozilla.org/en-US/kb/how-stop-firefox-making-automatic-connections#w_mozilla-content
+user_pref("browser.aboutHomeSnippets.updateUrl", "");
+
+// Disable "Snippets" (Mozilla content shown on about:home screen)
+// https://support.mozilla.org/en-US/kb/how-stop-firefox-making-automatic-connections#w_mozilla-content
+user_pref("browser.aboutHomeSnippets.updateUrl", "");
+
 /*
  * Network Performance
  */
@@ -150,13 +158,34 @@ user_pref("media.gmp-gmpopenh264.enabled", false);
 user_pref("media.gmp-manager.url", "");
 
 // Stop predictive connections to sites when the user hovers their mouse over thumbnails on the New Tab Page https://support.mozilla.org/en-US/kb/how-stop-firefox-making-automatic-connections#w_speculative-pre-connections
-user_pref("network.http.speculative-parallel-limit",		0);
-
-// Disable "Snippets" (Mozilla content shown on about:home screen)
-// https://support.mozilla.org/en-US/kb/how-stop-firefox-making-automatic-connections#w_mozilla-content
-user_pref("browser.aboutHomeSnippets.updateUrl", "");
-
+user_pref("network.http.speculative-parallel-limit",		0);d
 // Disable auto-update checking https://support.mozilla.org/en-US/kb/how-stop-firefox-making-automatic-connections#w_auto-update-checking
 user_pref("browser.search.update", false);
+
+/*
+ * Firefox Performance
+ */
+
+// Relocate cache only to RAM
+user_pref("browser.cache.disk.enable", false);
+user_pref("browser.cache.memory.enable", true);
+user_pref("browser.cache.memory.capacity", "-1");
+
+// Enable HTTP cache to get rid of most UI lags and other browser slowness issues
+// https://bugzilla.mozilla.org/show_bug.cgi?id=913807
+user_pref("browser.cache.use_new_backend", "-1");
+
+*
+ * Firefox Performance
+ */
+
+// Relocate cache only to RAM
+user_pref("browser.cache.disk.enable", false);
+user_pref("browser.cache.memory.enable", true);
+user_pref("browser.cache.memory.capacity", "-1");
+
+// Enable HTTP cache to get rid of most UI lags and other browser slowness issues
+// https://bugzilla.mozilla.org/show_bug.cgi?id=913807
+user_pref("browser.cache.use_new_backend", "-1");
 
 
