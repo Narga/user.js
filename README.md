@@ -19,7 +19,27 @@ So, most important of all: *use your brain*, **don't just copy & past**
 Here are some resource that I've using in this collection of tweaks.
 - pyllyukko's [user.js](https://github.com/pyllyukko/user.js)
 - [firefox-debloat](https://github.com/amq/firefox-debloat)
+
 ## What does it do?
 Here are some of the *highlights* from each category. For a full list of settings and references, check the `user.js` file itself.
 
-
+### Firefox features
+- Remove DRM media playback (Encrypted Media Extensions - EME)
+- Disable Firefox Hello
+- Disable Pocket intergration
+- Disable built-in PDF viewer
+- Disable HTML5 DOM local storage
+- Enabled IndexedDB
+- Disable Speed recognition
+- Disable getUserMedia screen sharing
+- Diasble sensor API
+- Disable HTML5 pings
+- Disable gamepad input
+- Disable virtual devices
+- Disable web notification services
+- Disable webGL
+- Disable face detection
+- Disable Gnome Shell Integration
+- Enable Click to Play feature
+- Disable SVG OpenType fonts rendering ability
+- Disable Share feature
