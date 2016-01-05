@@ -175,17 +175,100 @@ user_pref("browser.cache.memory.capacity", "-1");
 // https://bugzilla.mozilla.org/show_bug.cgi?id=913807
 user_pref("browser.cache.use_new_backend", "-1");
 
-*
- * Firefox Performance
+/*
+ * Privacy & Security
  */
 
-// Relocate cache only to RAM
-user_pref("browser.cache.disk.enable", false);
-user_pref("browser.cache.memory.enable", true);
-user_pref("browser.cache.memory.capacity", "-1");
+// Disable Google Safe Browsing
+// Warning: see https://github.com/amq/firefox-debloat/issues/3 !
+// Leaks your browsing history to Google. [Description](https://support.mozilla.org/en-US/kb/how-does-phishing-and-malware-protection-work)
+user_pref("browser.safebrowsing.enabled", false);
 
-// Enable HTTP cache to get rid of most UI lags and other browser slowness issues
-// https://bugzilla.mozilla.org/show_bug.cgi?id=913807
-user_pref("browser.cache.use_new_backend", "-1");
+// CIS 2.3.5 Block Reported Attack Sites
+// http://kb.mozillazine.org/Browser.safebrowsing.malware.enabled
+user_pref("browser.safebrowsing.malware.enabled", false);
 
+// Disable safe browsing remote lookups for downloaded files.
+// This leaks information to google.
+// https://www.mozilla.org/en-US/firefox/39.0/releasenotes/
+// https://wiki.mozilla.org/Security/Application_Reputation
+user_pref("browser.safebrowsing.downloads.enabled", false);
+user_pref("browser.safebrowsing.downloads.remote.enabled",	false);
+
+// Stop Firefox stats collecting
+// Stability and performance reports to Mozilla. Telemetry sends usage statistics. [Description](https://www.mozilla.org/en-US/privacy/firefox/#health-report)
+user_pref("datareporting.healthreport.service.enabled", false);
+user_pref("datareporting.healthreport.uploadEnabled", false);
+user_pref("toolkit.telemetry.enabled", false);
+
+// Disable Telemetry https://gecko.readthedocs.org/en/latest/toolkit/components/telemetry/telemetry/preferences.html
+user_pref("toolkit.telemetry.unified",		false);
+// https://wiki.mozilla.org/Telemetry/Experiments
+user_pref("experiments.supported",		false);
+user_pref("experiments.enabled",		false);
+
+// https://wiki.mozilla.org/Security/Tracking_protection
+// https://support.mozilla.org/en-US/kb/tracking-protection-firefox
+user_pref("privacy.trackingprotection.enabled",		true);
+// https://support.mozilla.org/en-US/kb/tracking-protection-pbm
+user_pref("privacy.trackingprotection.pbmode.enabled",		true);
+
+// WebRTC leaks real IP
+// Leaks real IP when using VPN/TOR. [Description and demo](https://github.com/diafygi/webrtc-ips)
+user_pref("media.peerconnection.enabled", false);
+
+// Disable Geolocation detect
+user_pref("geo.enabled", false);
+user_pref("geo.wifi.uri", "");
+
+// Disable geotargeting:
+// https://support.mozilla.org/en-US/kb/how-stop-firefox-making-automatic-connections#w_geolocation-for-default-search-engine
+user_pref("browser.search.geoSpecificDefaults", false);
+user_pref("browser.search.geoSpecificDefaults.url", "");
+user_pref("browser.search.geoip.url",	"");
+
+// Don't reveal your internal IP
+// Check the settings with: http://net.ipcalf.com/
+// https://wiki.mozilla.org/Media/WebRTC/Privacy
+user_pref("media-peerconnection.ice.default_address_only",		true);
+user_pref("media.peerconnection.enabled",		false);
+
+// getUserMedia
+// https://wiki.mozilla.org/Media/getUserMedia
+// https://developer.mozilla.org/en-US/docs/Web/API/Navigator
+user_pref("media.navigator.enabled",		false);
+// https://developer.mozilla.org/en-US/docs/Web/API/BatteryManager
+user_pref("dom.battery.enabled",		false);
+// https://wiki.mozilla.org/WebAPI/Security/WebTelephony
+user_pref("dom.telephony.enabled",		false);
+// https://developer.mozilla.org/en-US/docs/Web/API/navigator.sendBeacon
+user_pref("beacon.enabled",		false);
+// Prevent sites from sniffing clipboard content:
+// https://developer.mozilla.org/en-US/docs/Mozilla/Preferences/Preference_reference/dom.event.clipboardevents.enabled
+user_pref("dom.event.clipboardevents.enabled",		false);
+// https://wiki.mozilla.org/Security/Reviews/Firefox/NavigationTimingAPI
+user_pref("dom.enable_performance",		false);
+
+// Disable sending of the health report
+// https://support.mozilla.org/en-US/kb/firefox-health-report-understand-your-browser-perf
+user_pref("datareporting.healthreport.uploadEnabled",		false);
+// disable collection of the data (the healthreport.sqlite* files)
+user_pref("datareporting.healthreport.service.enabled",		false);
+// https://gecko.readthedocs.org/en/latest/toolkit/components/telemetry/telemetry/preferences.html
+user_pref("datareporting.policy.dataSubmissionEnabled",		false);
+
+// Disable new tab tile ads & preload
+// http://www.thewindowsclub.com/disable-remove-ad-tiles-from-firefox
+// http://forums.mozillazine.org/viewtopic.php?p=13876331#p13876331
+user_pref("browser.newtabpage.enhanced", false);
+user_pref("browser.newtab.preload", false);
+// https://wiki.mozilla.org/Tiles/Technical_Documentation#Ping
+// https://gecko.readthedocs.org/en/latest/browser/browser/DirectoryLinksProvider.html#browser-newtabpage-directory-ping
+user_pref("browser.newtabpage.directory.ping", "");
+// https://gecko.readthedocs.org/en/latest/browser/browser/DirectoryLinksProvider.html#browser-newtabpage-directory-source
+user_pref("browser.newtabpage.directory.source", "data:text/plain,{}");
+
+// disable heartbeat
+// https://wiki.mozilla.org/Advocacy/heartbeat
+user_pref("browser.selfsupport.url",		"");
 

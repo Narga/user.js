@@ -63,3 +63,19 @@ Here are some of the *highlights* from each category. For a full list of setting
 - Relocate cache to RAM
 - Enabled HTTP Cache to get rid of most UI lags and other browser slowness issues
 
+### Privacy & Security
+- Disable Google Safe Browsing
+- Disable Block Reported Attack Sites
+- Disable Safe Browsing remote lookups fore downloaded files.
+- Stop Firefox stats collecting
+- Disable Telemetry
+- Enable Tracking Protection
+- Prevent WebRTC leaks real IP
+- Disable Gelocation & Geotargeting detect
+- Don't reveal internal IP
+- Stop getUserMedia
+- Disable sending of the health report
+- Disable New Tab tile ads & preload
+- Disable Heartbeat
+
+
