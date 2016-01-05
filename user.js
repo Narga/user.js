@@ -175,6 +175,57 @@ user_pref("browser.cache.memory.capacity", "-1");
 // https://bugzilla.mozilla.org/show_bug.cgi?id=913807
 user_pref("browser.cache.use_new_backend", "-1");
 
+// Show full URLs in the address bar (including "http://"):
+user_pref("browser.urlbar.trimURLs", false);
+
+// Get rid of the useless/redundant "Visit (site)" and "(keyword) - search with (engine)" dropdown in the URL bar (since FF43):
+user_pref("browser.urlbar.unifiedcomplete", false);
+
+// Revert to old search bar layout - drop-down list instead of icons:
+    // This choice was removed in FF43 - use the Classic Theme Restorer addon if you want it back.
+// user_pref("browser.search.showOneOffButtons", false);
+
+// Load searches from right-click context menu in background tab
+    // https://developer.mozilla.org/en-US/docs/Mozilla/Preferences/Preference_reference/browser.search.context.loadInBackground
+user_pref("browser.search.context.loadInBackground", true);
+
+// Remove "(site) is now fullscreen" nag message:
+    // If you fear this might "facilitate phishing", you might not want to be on the internet at all.
+    // Before FF43:
+// user_pref("full-screen-api.approval-required", false);
+    // Since FF43:
+user_pref("full-screen-api.warning.delay", 0);
+user_pref("full-screen-api.warning.timeout", 0);
+
+// Disable fullscreen URL bar animation:
+user_pref("browser.fullscreen.animate", false);
+
+// Disable tab animation:
+    // http://www.askvg.com/how-to-disable-animation-while-opening-new-tab-in-mozilla-firefox-4-0/
+user_pref("browser.tabs.animate", false);
+
+// Prevent sites from disabling the default right-click menu:
+user_pref("dom.event.contextmenu.enabled", false);
+
+// Prevent sites/popups from messing with certain UI elements:
+    // http://kb.mozillazine.org/Prevent_websites_from_disabling_new_window_features
+user_pref("dom.disable_window_open_feature.location", true); // Always show the URL bar
+user_pref("dom.disable_window_open_feature.resizable", true); // Allow to resize the window
+user_pref("dom.disable_window_open_feature.status", true); // Always show the status bar
+
+// De-crap new tab page, get rid of "directory tiles" ads:
+    // http://thenextweb.com/apps/2014/08/28/mozilla-rolls-sponsored-tiles-firefox-nightlys-new-tab-page/
+user_pref("browser.newtab.preload", false);
+user_pref("browser.newtab.url", "about:blank");
+user_pref("browser.newtabpage.directory.ping", "");
+user_pref("browser.newtabpage.directory.source", "");
+user_pref("browser.newtabpage.enabled", false);
+user_pref("browser.newtabpage.enhanced", false);
+user_pref("browser.newtabpage.introShown", true);
+
+// Disable (broken) auto-scrolling via middle-click:
+user_pref("general.autoScroll", false);
+
 /*
  * Privacy & Security
  */

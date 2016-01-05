@@ -62,6 +62,15 @@ Here are some of the *highlights* from each category. For a full list of setting
 ### Firefox Performance
 - Relocate cache to RAM
 - Enabled HTTP Cache to get rid of most UI lags and other browser slowness issues
+- Show full URLs in the address bar
+- Get rid of the useless/redundant "Visit (site)" and "(keyword) - search with (engine)" dropdown in the URL bar (since FF43)
+- Load searches from right-click context menu in background tab
+- Remove "(site) is now fullscreen" nag message
+- Disable tab animation
+- Prevent sites from disabling the default right-click menu
+- Prevent sites/popups from messing with certain UI elements
+- De-crap new tab page, get rid of "directory tiles" ads
+- Disable (broken) auto-scrolling via middle-click
 
 ### Privacy & Security
 - Disable Google Safe Browsing
