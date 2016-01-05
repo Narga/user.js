@@ -87,4 +87,7 @@ Here are some of the *highlights* from each category. For a full list of setting
 - Disable New Tab tile ads & preload
 - Disable Heartbeat
 
+### Development Tool
+- Enable eyedropper
+- Use dark theme
 

@@ -323,3 +323,13 @@ user_pref("browser.newtabpage.directory.source", "data:text/plain,{}");
 // https://wiki.mozilla.org/Advocacy/heartbeat
 user_pref("browser.selfsupport.url",		"");
 
+/*
+ * Development Tools
+ */
+
+// Enable eyedropper in dev tools:
+user_pref("devtools.command-button-eyedropper.enabled", true);
+
+// Dark theme for dev tools:
+user_pref("devtools.theme", "dark");
+
