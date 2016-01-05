@@ -109,4 +109,54 @@ user_pref("social.shareDirectory", "");
 user_pref("social.toast-notifications.enabled", false);
 user_pref("social.whitelist", "");
 
+/*
+ * Network Performance
+ */
+
+// Enable Pipelining to allow Firefox sends multiple request to web server at a moment.
+user_pref("network.http.pipelining", true);
+
+// This preference controls the maximum number of times the content will do timer-based reflows.
+user_pref("content.notify.backoffcount", "5");
+
+// The number of milliseconds to wait before first displaying the page. (Default: 250)
+user_pref("nglayout.initialpaint.delay", "0");
+
+// Disable link prefetching
+// http://kb.mozillazine.org/Network.prefetch-next
+// https://developer.mozilla.org/en-US/docs/Web/HTTP/Link_prefetching_FAQ#Is_there_a_preference_to_disable_link_prefetching.3F
+user_pref("network.prefetch-next",		false);
+
+// http://kb.mozillazine.org/Network.dns.disablePrefetch
+// https://developer.mozilla.org/en-US/docs/Web/HTTP/Controlling_DNS_prefetching
+user_pref("network.dns.disablePrefetch",		true);
+user_pref("network.dns.disablePrefetchFromHTTPS",		true);
+
+// To improve page load time by performing overhead for connections (DNS lookup, TCP handshake, TLS handshake) before the connections are actually needed. https://wiki.mozilla.org/Privacy/Reviews/Necko
+user_pref("network.predictor.enabled", false);
+
+// Search suggestions
+// Everything you type in the search box is sent to the search engine.
+user_pref("browser.search.suggest.enabled", true);
+
+// Disable SSDP
+// https://bugzil.la/1111967
+user_pref("browser.casting.enabled",		false);
+
+// Disable support openh264 codec for peer-to-peer video when disable Hello
+// https://support.mozilla.org/en-US/kb/how-stop-firefox-making-automatic-connections#w_media-capabilities
+// http://andreasgal.com/2014/10/14/openh264-now-in-firefox/
+user_pref("media.gmp-gmpopenh264.enabled", false);
+user_pref("media.gmp-manager.url", "");
+
+// Stop predictive connections to sites when the user hovers their mouse over thumbnails on the New Tab Page https://support.mozilla.org/en-US/kb/how-stop-firefox-making-automatic-connections#w_speculative-pre-connections
+user_pref("network.http.speculative-parallel-limit",		0);
+
+// Disable "Snippets" (Mozilla content shown on about:home screen)
+// https://support.mozilla.org/en-US/kb/how-stop-firefox-making-automatic-connections#w_mozilla-content
+user_pref("browser.aboutHomeSnippets.updateUrl", "");
+
+// Disable auto-update checking https://support.mozilla.org/en-US/kb/how-stop-firefox-making-automatic-connections#w_auto-update-checking
+user_pref("browser.search.update", false);
+
 

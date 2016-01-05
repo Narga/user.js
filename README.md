@@ -1,11 +1,13 @@
-# user.js
+## user.js
 NARGA customized preferences to Enhance Firefox Productivity - user.js
+
 ---
 This is personaly [NARGA Firefox's tweaks](http://www.narga.net/ultimate-guide-tweaks-enhance-firefox-productivity/) which focusing on debloated, speed, performance UI/UX, and more to enhance Firefox's productivity with some tweaks, disabling or removing unnecessary features, component, bloatware as well.
 
 Unlike other similar projects, I built it by myself with my opinions, so may be all of these configuration is not best for you.
 
 So, most important of all: *use your brain*, **don't just copy & past**
+
 ---
 ## Installation
 - Copy then past the `user.js` file into your Firefox's profile folder (you can find the path of your profile folder via about:support).
@@ -43,3 +45,17 @@ Here are some of the *highlights* from each category. For a full list of setting
 - Enable Click to Play feature
 - Disable SVG OpenType fonts rendering ability
 - Disable Share feature
+- Disable "Snippets" (Mozilla content shown on about:home screen)
+
+### Network Performance
+- Enable Pipelining
+- Tweak content timer-based reflows
+- Decrease the waiting time before first displaying the page (default 250)
+- Disable link prefetching
+- Improve page load time by performing overhead for connections
+- Enable Search suggestions
+- Disable SSDP
+- Disable support openh264 codec for peer-to-peer video when disable Hello
+- Stop predictive connections to sites when the user hovers their mouse over thumbnails on the New Tab Page
+- Disable Auto-update checking
+
