@@ -158,7 +158,7 @@ user_pref("media.gmp-gmpopenh264.enabled", false);
 user_pref("media.gmp-manager.url", "");
 
 // Stop predictive connections to sites when the user hovers their mouse over thumbnails on the New Tab Page https://support.mozilla.org/en-US/kb/how-stop-firefox-making-automatic-connections#w_speculative-pre-connections
-user_pref("network.http.speculative-parallel-limit",		0);d
+user_pref("network.http.speculative-parallel-limit",		0);
 // Disable auto-update checking https://support.mozilla.org/en-US/kb/how-stop-firefox-making-automatic-connections#w_auto-update-checking
 user_pref("browser.search.update", false);
 
