@@ -21,6 +21,8 @@ So, most important of all: *use your brain*, **don't just copy & past**
 Here are some resource that I've using in this collection of tweaks.
 - pyllyukko's [user.js](https://github.com/pyllyukko/user.js)
 - [firefox-debloat](https://github.com/amq/firefox-debloat)
+- There are a lot of `user.js` with multi purpose goals, I recommend [compare-user.js](https://github.com/jm42/compare-user.js) to get the best settings for your `user.js` file.
+- To start a fresh new Firefox profile, why don't you trying [profile-maker](https://github.com/allo-/firefox-profilemaker) to create Firefox profile with good defaults.
 
 ## What does it do?
 Here are some of the *highlights* from each category. For a full list of settings and references, check the `user.js` file itself.
