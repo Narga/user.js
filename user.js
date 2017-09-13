@@ -155,10 +155,6 @@ user_pref("browser.cache.disk.enable", false);
 user_pref("browser.cache.memory.enable", true);
 user_pref("browser.cache.memory.capacity", "-1");
 
-// Enable HTTP cache to get rid of most UI lags and other browser slowness issues
-// https://bugzilla.mozilla.org/show_bug.cgi?id=913807
-user_pref("browser.cache.use_new_backend", "-1");
-
 // Show full URLs in the address bar (including "http://"):
 user_pref("browser.urlbar.trimURLs", false);
 
