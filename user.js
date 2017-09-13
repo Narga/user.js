@@ -135,10 +135,6 @@ user_pref("network.predictor.enabled", false);
 // Everything you type in the search box is sent to the search engine.
 user_pref("browser.search.suggest.enabled", true);
 
-// Disable SSDP
-// https://bugzil.la/1111967
-user_pref("browser.casting.enabled",		false);
-
 // Disable support openh264 codec for peer-to-peer video when disable Hello
 // https://support.mozilla.org/en-US/kb/how-stop-firefox-making-automatic-connections#w_media-capabilities
 // http://andreasgal.com/2014/10/14/openh264-now-in-firefox/
