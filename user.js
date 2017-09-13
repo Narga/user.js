@@ -92,10 +92,6 @@ user_pref("plugin.state.libgnome-shell-browser-plugin",	0);
 // http://forums.mozillazine.org/viewtopic.php?p=13845077&sid=28af2622e8bd8497b9113851676846b1#p13845077
 //user_pref("media.gmp-provider.enabled",		false);
 
-// https://wiki.mozilla.org/Firefox/Click_To_Play
-// https://blog.mozilla.org/security/2012/10/11/click-to-play-plugins-blocklist-style/
-user_pref("plugins.click_to_play",		true);
-
 // Disable rendering of SVG OpenType fonts:
     // https://wiki.mozilla.org/SVGOpenTypeFonts
     // https://github.com/iSECPartners/publications/blob/master/presentations/SVG_Security-rdegraaf-bh_us_2014.pdf
@@ -358,4 +354,8 @@ user_pref("extensions.blocklist.enabled",		true);
 user_pref("plugin.state.flash",		0);
 // If installed - ask to activate Flash. If not - don't nag about missing Flash plugin:
 user_pref("plugins.notifyMissingFlash", false);
+
+// https://wiki.mozilla.org/Firefox/Click_To_Play
+// https://blog.mozilla.org/security/2012/10/11/click-to-play-plugins-blocklist-style/
+user_pref("plugins.click_to_play",		true);
 
