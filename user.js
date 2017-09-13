@@ -15,13 +15,13 @@
 user_pref("media.eme.enabled", false);
 user_pref("media.gmp-eme-adobe.enabled", false);
 
-// Turn off Firefox Hello
+// Firefox Hello has been removed since version 49
 // Firefox connects to third-party (Telefonica) servers without asking for permission [Description](https://support.mozilla.org/en-US/kb/firefox-hello-video-and-voice-conversations-online)
-user_pref("loop.enabled", false);
+//user_pref("loop.enabled", false);
 
 // Disable Pocket integration
 // [Description](https://support.mozilla.org/en-US/kb/save-web-pages-later-pocket-firefox)
- user_pref("browser.pocket.enabled", false);
+user_pref("browser.pocket.enabled", false);
 
 // Remove Reader mode
 // Each page you visit is parsed, leaking your browsing history. [Discussion](https://bugzilla.mozilla.org/show_bug.cgi?id=558882)
@@ -187,7 +187,7 @@ user_pref("browser.urlbar.unifiedcomplete", false);
 
 // Load searches from right-click context menu in background tab
     // https://developer.mozilla.org/en-US/docs/Mozilla/Preferences/Preference_reference/browser.search.context.loadInBackground
-user_pref("browser.search.context.loadInBackground", true);
+//user_pref("browser.search.context.loadInBackground", true);
 
 // Remove "(site) is now fullscreen" nag message:
     // If you fear this might "facilitate phishing", you might not want to be on the internet at all.
@@ -205,7 +205,8 @@ user_pref("browser.fullscreen.animate", false);
 user_pref("browser.tabs.animate", false);
 
 // Prevent sites from disabling the default right-click menu:
-user_pref("dom.event.contextmenu.enabled", false);
+// Allow this for website's context menu
+//user_pref("dom.event.contextmenu.enabled", false);
 
 // Prevent sites/popups from messing with certain UI elements:
     // http://kb.mozillazine.org/Prevent_websites_from_disabling_new_window_features
