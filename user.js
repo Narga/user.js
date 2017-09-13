@@ -105,14 +105,6 @@ user_pref("social.shareDirectory", "");
 user_pref("social.toast-notifications.enabled", false);
 user_pref("social.whitelist", "");
 
-// Disable "Snippets" (Mozilla content shown on about:home screen)
-// https://support.mozilla.org/en-US/kb/how-stop-firefox-making-automatic-connections#w_mozilla-content
-user_pref("browser.aboutHomeSnippets.updateUrl", "");
-
-// Disable "Snippets" (Mozilla content shown on about:home screen)
-// https://support.mozilla.org/en-US/kb/how-stop-firefox-making-automatic-connections#w_mozilla-content
-user_pref("browser.aboutHomeSnippets.updateUrl", "");
-
 /*
  * Network Performance
  */
@@ -223,6 +215,14 @@ user_pref("browser.newtabpage.introShown", true);
 // http://forums.mozillazine.org/viewtopic.php?p=13876331#p13876331
 user_pref("browser.newtabpage.enhanced", false);
 user_pref("browser.newtab.preload", false);
+
+// Disable "Snippets" (Mozilla content shown on about:home screen)
+// https://support.mozilla.org/en-US/kb/how-stop-firefox-making-automatic-connections#w_mozilla-content
+user_pref("browser.aboutHomeSnippets.updateUrl", "");
+
+// Disable "Snippets" (Mozilla content shown on about:home screen)
+// https://support.mozilla.org/en-US/kb/how-stop-firefox-making-automatic-connections#w_mozilla-content
+user_pref("browser.aboutHomeSnippets.updateUrl", "");
 
 // Disable (broken) auto-scrolling via middle-click:
 user_pref("general.autoScroll", false);
