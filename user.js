@@ -221,8 +221,12 @@ user_pref("browser.newtab.url", "about:blank");
 user_pref("browser.newtabpage.directory.ping", "");
 user_pref("browser.newtabpage.directory.source", "");
 user_pref("browser.newtabpage.enabled", false);
-user_pref("browser.newtabpage.enhanced", false);
 user_pref("browser.newtabpage.introShown", true);
+// Disable new tab tile ads & preload
+// http://www.thewindowsclub.com/disable-remove-ad-tiles-from-firefox
+// http://forums.mozillazine.org/viewtopic.php?p=13876331#p13876331
+user_pref("browser.newtabpage.enhanced", false);
+user_pref("browser.newtab.preload", false);
 
 // Disable (broken) auto-scrolling via middle-click:
 user_pref("general.autoScroll", false);
@@ -309,11 +313,6 @@ user_pref("datareporting.healthreport.service.enabled",		false);
 // https://gecko.readthedocs.org/en/latest/toolkit/components/telemetry/telemetry/preferences.html
 user_pref("datareporting.policy.dataSubmissionEnabled",		false);
 
-// Disable new tab tile ads & preload
-// http://www.thewindowsclub.com/disable-remove-ad-tiles-from-firefox
-// http://forums.mozillazine.org/viewtopic.php?p=13876331#p13876331
-user_pref("browser.newtabpage.enhanced", false);
-user_pref("browser.newtab.preload", false);
 // https://wiki.mozilla.org/Tiles/Technical_Documentation#Ping
 // https://gecko.readthedocs.org/en/latest/browser/browser/DirectoryLinksProvider.html#browser-newtabpage-directory-ping
 user_pref("browser.newtabpage.directory.ping", "");
