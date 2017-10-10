@@ -212,9 +212,9 @@ user_pref("browser.newtab.preload", false);
 // https://support.mozilla.org/en-US/kb/how-stop-firefox-making-automatic-connections#w_mozilla-content
 user_pref("browser.aboutHomeSnippets.updateUrl", "");
 
-// Disable "Snippets" (Mozilla content shown on about:home screen)
-// https://support.mozilla.org/en-US/kb/how-stop-firefox-making-automatic-connections#w_mozilla-content
-user_pref("browser.aboutHomeSnippets.updateUrl", "");
+// Disable "Firefox Studies" (Allow Firefox to install and run studies)
+// https://support.mozilla.org/en-US/kb/shield?as=u&utm_source=inproduct
+user_pref("app.shield.optoutstudies.enabled", "false");
 
 // Disable (broken) auto-scrolling via middle-click:
 user_pref("general.autoScroll", false);
