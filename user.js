@@ -219,6 +219,9 @@ user_pref("app.shield.optoutstudies.enabled", "false");
 // Disable (broken) auto-scrolling via middle-click:
 user_pref("general.autoScroll", false);
 
+// Don't load tabs until selected, include pinned tabs
+user_pref("browser.sessionstore.restore_hidden_tabs", true);
+user_pref("browser.sessionstore.restore_pinned_tabs_on_demand", true);
 /*
  * Privacy & Security
  */
